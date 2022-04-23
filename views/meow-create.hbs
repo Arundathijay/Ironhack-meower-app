@@ -1,0 +1,18 @@
+<h1>Publish meow</h1>
+
+{{! We can omit action because we want form to be posted to same path }}
+{{!file contentws get propely sumbitted}}
+
+<form method='POST' enctype='multipart/form-data'>
+  <label for='input-message'>Message</label>
+  <textarea
+    id='input-message'
+    name='message'
+    placeholder='Your message...'
+  ></textarea>
+
+  <input id='input-picture' type='file' accept='image/*' name='picture' />
+  <label for='input-picture'>An illustrative picture</label>
+
+  <button>Publish </button>
+</form>
